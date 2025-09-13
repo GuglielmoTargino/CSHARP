@@ -93,9 +93,29 @@ namespace CalculoFormsIMC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gordo1 {
+            get {
+                object obj = ResourceManager.GetObject("gordo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap magro {
             get {
                 object obj = ResourceManager.GetObject("magro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magro1 {
+            get {
+                object obj = ResourceManager.GetObject("magro1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +143,29 @@ namespace CalculoFormsIMC.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap normal1 {
+            get {
+                object obj = ResourceManager.GetObject("normal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Super_Mario_Bros_CD {
             get {
                 object obj = ResourceManager.GetObject("Super-Mario-Bros-CD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Super_Mario_Bros_CD1 {
+            get {
+                object obj = ResourceManager.GetObject("Super-Mario-Bros-CD1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

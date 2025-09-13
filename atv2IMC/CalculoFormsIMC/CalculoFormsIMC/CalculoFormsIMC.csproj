@@ -101,5 +101,17 @@
   <ItemGroup>
     <None Include="Resources\Super-Mario-Bros-CD.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gordo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Super-Mario-Bros-CD1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

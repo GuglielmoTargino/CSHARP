@@ -124,6 +124,9 @@
   <data name="magro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Super-Mario-Bros-CD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Super-Mario-Bros-CD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="n6fccn1rgq8a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\n6fccn1rgq8a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,16 @@
   <data name="depositphotos_278290014-stock-illustration-skinny-cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\depositphotos_278290014-stock-illustration-skinny-cat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Super-Mario-Bros-CD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Super-Mario-Bros-CD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gordo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gordo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magro1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normal1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Super-Mario-Bros-CD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Super-Mario-Bros-CD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

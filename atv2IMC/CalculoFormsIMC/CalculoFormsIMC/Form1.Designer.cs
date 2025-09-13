@@ -36,6 +36,7 @@
             this.textBoxAviso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.texboxalerta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,9 +56,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 20);
+            this.label2.Size = new System.Drawing.Size(177, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Informe a Altura em cm";
+            this.label2.Text = "Informe Altura em M.";
             // 
             // textBoxPeso
             // 
@@ -110,13 +111,24 @@
             this.pictureBox1.Size = new System.Drawing.Size(229, 326);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // texboxalerta
+            // 
+            this.texboxalerta.Location = new System.Drawing.Point(497, 366);
+            this.texboxalerta.MaximumSize = new System.Drawing.Size(500, 40);
+            this.texboxalerta.Name = "texboxalerta";
+            this.texboxalerta.ReadOnly = true;
+            this.texboxalerta.Size = new System.Drawing.Size(220, 20);
+            this.texboxalerta.TabIndex = 9;
             // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CalculoFormsIMC.Properties.Resources.Super_Mario_Bros_CD;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(740, 450);
+            this.Controls.Add(this.texboxalerta);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxAviso);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.TextBox textBoxAviso;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox texboxalerta;
     }
 }
 

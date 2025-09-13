@@ -8,3 +8,14 @@ C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debu
 C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.CoreCompileInputs.cache
 C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.exe
 C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.pdb
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.AssemblyReference.cache
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.exe.config
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.form1.resources
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.Properties.Resources.resources
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.GenerateResource.cache
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.CoreCompileInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.exe
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.pdb
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.exe.config
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.exe
+C:\GIT_REP_CSHARP\CSHARP\atv2IMC\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.pdb
