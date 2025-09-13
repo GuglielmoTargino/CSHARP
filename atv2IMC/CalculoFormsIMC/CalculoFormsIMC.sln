@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoFormsIMC", "CalculoFormsIMC\CalculoFormsIMC.csproj", "{08A200F6-F7AC-4990-A6AD-22B2F1A1960D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A200F6-F7AC-4990-A6AD-22B2F1A1960D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A200F6-F7AC-4990-A6AD-22B2F1A1960D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A200F6-F7AC-4990-A6AD-22B2F1A1960D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A200F6-F7AC-4990-A6AD-22B2F1A1960D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA87289C-D0D6-45DD-B1DC-0D66D8170CDF}
+	EndGlobalSection
+EndGlobal

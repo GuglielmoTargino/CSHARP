@@ -1,0 +1,10 @@
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.exe.config
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.exe
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\bin\Debug\CalculoFormsIMC.pdb
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.AssemblyReference.cache
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.form1.resources
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.Properties.Resources.resources
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.GenerateResource.cache
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.csproj.CoreCompileInputs.cache
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.exe
+C:\Users\Aluno.SA-LAB05-42\source\repos\CalculoFormsIMC\CalculoFormsIMC\obj\Debug\CalculoFormsIMC.pdb
