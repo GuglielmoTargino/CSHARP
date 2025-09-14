@@ -52,13 +52,15 @@ namespace CalculoFormsIMC
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            float resu = 0, peso = 0, altu = 0;
 
-           
+            
+                float resu = 0, peso = 0, altu = 0;           
             peso = float.Parse(textBoxPeso.Text);
             altu = float.Parse(textBoxAltu.Text);
 
             resu = peso / (altu * altu);
+
+        
 
             if (resu <= 18.5)
             {                // Code to be executed if condition1 is true

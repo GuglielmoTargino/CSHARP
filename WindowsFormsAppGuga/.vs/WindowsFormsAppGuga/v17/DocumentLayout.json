@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GIT_REP_CSHARP\\CSHARP\\WindowsFormsAppGuga\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8978A227-6F95-4DB9-B28F-20FB30151DFA}|WindowsFormsAppGuga\\WindowsFormsAppGuga.csproj|c:\\git_rep_csharp\\csharp\\windowsformsappguga\\windowsformsappguga\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8978A227-6F95-4DB9-B28F-20FB30151DFA}|WindowsFormsAppGuga\\WindowsFormsAppGuga.csproj|solutionrelative:windowsformsappguga\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8978A227-6F95-4DB9-B28F-20FB30151DFA}|WindowsFormsAppGuga\\WindowsFormsAppGuga.csproj|c:\\git_rep_csharp\\csharp\\windowsformsappguga\\windowsformsappguga\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8978A227-6F95-4DB9-B28F-20FB30151DFA}|WindowsFormsAppGuga\\WindowsFormsAppGuga.csproj|solutionrelative:windowsformsappguga\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindowsFormsAppGuga\\WindowsFormsAppGuga\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsAppGuga\\Form1.cs",
+              "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindowsFormsAppGuga\\WindowsFormsAppGuga\\Form1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsAppGuga\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T20:34:46.83Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindowsFormsAppGuga\\WindowsFormsAppGuga\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsAppGuga\\Form1.cs",
+              "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindowsFormsAppGuga\\WindowsFormsAppGuga\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsAppGuga\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T02:15:02.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
