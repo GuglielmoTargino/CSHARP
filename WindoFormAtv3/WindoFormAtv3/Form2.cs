@@ -19,6 +19,34 @@ namespace WindoFormAtv3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void btnTela3_Click(object sender, EventArgs e)
+        {
+            //this.Close();
+            //this.Hide();
+           
+            
+
+            DadosPessoais dadosPessoais = new DadosPessoais();
+            dadosPessoais.Show();
+            this.Close();
+
+        }
+
+        private void btnTela2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTela4_Click(object sender, EventArgs e)
+        {
+            Interesses interesses = new Interesses();
+            interesses.Show();
+
+            this.Close();   
+
 
         }
     }

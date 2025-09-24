@@ -30,11 +30,10 @@ namespace WindoFormAtv3
 
             if (usu == "admin" && senh == "1234")
             {
+               
+                TelaDoc Docu = new TelaDoc();             
+                Docu.Show();
                 this.Hide();
-                //this.Close();
-                TelaDoc Docu = new TelaDoc();
-             
-                Docu.ShowDialog();
 
             }
             else

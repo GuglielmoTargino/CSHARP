@@ -40,7 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.radioButtonMas = new System.Windows.Forms.RadioButton();
             this.radioButtonFem = new System.Windows.Forms.RadioButton();
-            this.btnTela2 = new System.Windows.Forms.Button();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.btnTela4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(155, 383);
+            this.btnSair.Location = new System.Drawing.Point(694, 49);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 4;
@@ -96,12 +96,13 @@
             // 
             // btnTela3
             // 
-            this.btnTela3.Location = new System.Drawing.Point(380, 383);
+            this.btnTela3.Location = new System.Drawing.Point(694, 112);
             this.btnTela3.Name = "btnTela3";
             this.btnTela3.Size = new System.Drawing.Size(75, 23);
             this.btnTela3.TabIndex = 5;
             this.btnTela3.Text = "Tela 3";
             this.btnTela3.UseVisualStyleBackColor = true;
+            this.btnTela3.Click += new System.EventHandler(this.btnTela3_Click);
             // 
             // textBoxRG
             // 
@@ -138,7 +139,7 @@
             // 
             this.radioButtonMas.AutoSize = true;
             this.radioButtonMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMas.Location = new System.Drawing.Point(339, 288);
+            this.radioButtonMas.Location = new System.Drawing.Point(252, 288);
             this.radioButtonMas.Name = "radioButtonMas";
             this.radioButtonMas.Size = new System.Drawing.Size(89, 21);
             this.radioButtonMas.TabIndex = 11;
@@ -150,7 +151,7 @@
             // 
             this.radioButtonFem.AutoSize = true;
             this.radioButtonFem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFem.Location = new System.Drawing.Point(487, 288);
+            this.radioButtonFem.Location = new System.Drawing.Point(379, 288);
             this.radioButtonFem.Name = "radioButtonFem";
             this.radioButtonFem.Size = new System.Drawing.Size(83, 21);
             this.radioButtonFem.TabIndex = 12;
@@ -158,23 +159,25 @@
             this.radioButtonFem.Text = "Feminino";
             this.radioButtonFem.UseVisualStyleBackColor = true;
             // 
-            // btnTela2
+            // btnEnviar
             // 
-            this.btnTela2.Location = new System.Drawing.Point(263, 382);
-            this.btnTela2.Name = "btnTela2";
-            this.btnTela2.Size = new System.Drawing.Size(75, 23);
-            this.btnTela2.TabIndex = 13;
-            this.btnTela2.Text = "Tela 2";
-            this.btnTela2.UseVisualStyleBackColor = true;
+            this.btnEnviar.Location = new System.Drawing.Point(263, 382);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 13;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnTela2_Click);
             // 
             // btnTela4
             // 
-            this.btnTela4.Location = new System.Drawing.Point(494, 382);
+            this.btnTela4.Location = new System.Drawing.Point(694, 182);
             this.btnTela4.Name = "btnTela4";
             this.btnTela4.Size = new System.Drawing.Size(75, 23);
             this.btnTela4.TabIndex = 14;
             this.btnTela4.Text = "Tela 4";
             this.btnTela4.UseVisualStyleBackColor = true;
+            this.btnTela4.Click += new System.EventHandler(this.btnTela4_Click);
             // 
             // TelaDoc
             // 
@@ -182,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnTela4);
-            this.Controls.Add(this.btnTela2);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.radioButtonFem);
             this.Controls.Add(this.radioButtonMas);
             this.Controls.Add(this.label5);
@@ -216,7 +219,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButtonMas;
         private System.Windows.Forms.RadioButton radioButtonFem;
-        private System.Windows.Forms.Button btnTela2;
+        private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnTela4;
     }
 }

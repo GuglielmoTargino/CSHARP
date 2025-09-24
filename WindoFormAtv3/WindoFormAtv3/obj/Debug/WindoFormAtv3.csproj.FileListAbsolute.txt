@@ -21,3 +21,5 @@ C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.pdb
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\bin\Debug\WindoFormAtv3.exe.config
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\bin\Debug\WindoFormAtv3.exe
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\bin\Debug\WindoFormAtv3.pdb
+C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.DadosPessoais.resources
+C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.Interesses.resources

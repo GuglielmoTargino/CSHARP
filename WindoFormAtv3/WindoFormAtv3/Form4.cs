@@ -16,5 +16,28 @@ namespace WindoFormAtv3
         {
             InitializeComponent();
         }
+
+        private void btnTela2_Click(object sender, EventArgs e)
+        {
+            
+            TelaDoc telaDoc = new TelaDoc();
+            telaDoc.Show();
+            this.Close();
+
+
+        }
+
+        private void btnTela3_Click(object sender, EventArgs e)
+        {
+            DadosPessoais dadosPessoais = new DadosPessoais();
+            dadosPessoais.Show();
+            this.Close( );
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
+        }
     }
 }
