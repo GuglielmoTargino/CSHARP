@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindoFormAtv3.global;
 
 namespace WindoFormAtv3
 {
@@ -38,6 +39,14 @@ namespace WindoFormAtv3
         private void Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Enviar_Click(object sender, EventArgs e)
+        {
+            VariaveisGlobais.nome = tboxNome.Text;
+            VariaveisGlobais.dtnasc = tBoxNasc.Text;
+            MessageBox.Show($"NOME: {VariaveisGlobais.nome}, DATA_NASC: {VariaveisGlobais.dtnasc}");
+            //VariaveisGlobais.SalvarEmArquivo();
         }
     }
 }

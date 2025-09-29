@@ -35,9 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tboxNome = new System.Windows.Forms.TextBox();
-            this.tBoxTSang = new System.Windows.Forms.TextBox();
-            this.radbuttMasc = new System.Windows.Forms.RadioButton();
-            this.radbuttFemin = new System.Windows.Forms.RadioButton();
+            this.tBoxNasc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Sair
@@ -52,12 +50,13 @@
             // 
             // Enviar
             // 
-            this.Enviar.Location = new System.Drawing.Point(155, 352);
+            this.Enviar.Location = new System.Drawing.Point(66, 211);
             this.Enviar.Name = "Enviar";
             this.Enviar.Size = new System.Drawing.Size(75, 23);
             this.Enviar.TabIndex = 1;
-            this.Enviar.Text = "Enviar";
+            this.Enviar.Text = "Salvar";
             this.Enviar.UseVisualStyleBackColor = true;
+            this.Enviar.Click += new System.EventHandler(this.Enviar_Click);
             // 
             // Tela2
             // 
@@ -93,9 +92,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(63, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Tipo Sanguineo";
+            this.label2.Text = "Data Nasc.";
             // 
             // tboxNome
             // 
@@ -104,43 +103,19 @@
             this.tboxNome.Size = new System.Drawing.Size(100, 20);
             this.tboxNome.TabIndex = 6;
             // 
-            // tBoxTSang
+            // tBoxNasc
             // 
-            this.tBoxTSang.Location = new System.Drawing.Point(164, 136);
-            this.tBoxTSang.Name = "tBoxTSang";
-            this.tBoxTSang.Size = new System.Drawing.Size(100, 20);
-            this.tBoxTSang.TabIndex = 7;
-            // 
-            // radbuttMasc
-            // 
-            this.radbuttMasc.AutoSize = true;
-            this.radbuttMasc.Location = new System.Drawing.Point(164, 245);
-            this.radbuttMasc.Name = "radbuttMasc";
-            this.radbuttMasc.Size = new System.Drawing.Size(73, 17);
-            this.radbuttMasc.TabIndex = 8;
-            this.radbuttMasc.TabStop = true;
-            this.radbuttMasc.Text = "Masculino";
-            this.radbuttMasc.UseVisualStyleBackColor = true;
-            // 
-            // radbuttFemin
-            // 
-            this.radbuttFemin.AutoSize = true;
-            this.radbuttFemin.Location = new System.Drawing.Point(334, 245);
-            this.radbuttFemin.Name = "radbuttFemin";
-            this.radbuttFemin.Size = new System.Drawing.Size(67, 17);
-            this.radbuttFemin.TabIndex = 9;
-            this.radbuttFemin.TabStop = true;
-            this.radbuttFemin.Text = "Feminino";
-            this.radbuttFemin.UseVisualStyleBackColor = true;
+            this.tBoxNasc.Location = new System.Drawing.Point(164, 136);
+            this.tBoxNasc.Name = "tBoxNasc";
+            this.tBoxNasc.Size = new System.Drawing.Size(100, 20);
+            this.tBoxNasc.TabIndex = 7;
             // 
             // DadosPessoais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radbuttFemin);
-            this.Controls.Add(this.radbuttMasc);
-            this.Controls.Add(this.tBoxTSang);
+            this.Controls.Add(this.tBoxNasc);
             this.Controls.Add(this.tboxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -164,8 +139,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tboxNome;
-        private System.Windows.Forms.TextBox tBoxTSang;
-        private System.Windows.Forms.RadioButton radbuttMasc;
-        private System.Windows.Forms.RadioButton radbuttFemin;
+        private System.Windows.Forms.TextBox tBoxNasc;
     }
 }

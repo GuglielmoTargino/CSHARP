@@ -31,12 +31,10 @@
             this.doc = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnTela3 = new System.Windows.Forms.Button();
             this.textBoxRG = new System.Windows.Forms.TextBox();
             this.textBoxCPF = new System.Windows.Forms.TextBox();
-            this.textBoxCNH = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.radioButtonMas = new System.Windows.Forms.RadioButton();
             this.radioButtonFem = new System.Windows.Forms.RadioButton();
@@ -74,16 +72,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "CPF";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(102, 246);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "CNH";
-            // 
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(694, 49);
@@ -118,18 +106,11 @@
             this.textBoxCPF.Size = new System.Drawing.Size(100, 20);
             this.textBoxCPF.TabIndex = 7;
             // 
-            // textBoxCNH
-            // 
-            this.textBoxCNH.Location = new System.Drawing.Point(252, 238);
-            this.textBoxCNH.Name = "textBoxCNH";
-            this.textBoxCNH.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCNH.TabIndex = 8;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(105, 288);
+            this.label5.Location = new System.Drawing.Point(99, 238);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 24);
             this.label5.TabIndex = 10;
@@ -139,33 +120,35 @@
             // 
             this.radioButtonMas.AutoSize = true;
             this.radioButtonMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMas.Location = new System.Drawing.Point(252, 288);
+            this.radioButtonMas.Location = new System.Drawing.Point(249, 242);
             this.radioButtonMas.Name = "radioButtonMas";
             this.radioButtonMas.Size = new System.Drawing.Size(89, 21);
             this.radioButtonMas.TabIndex = 11;
             this.radioButtonMas.TabStop = true;
             this.radioButtonMas.Text = "Masculino";
             this.radioButtonMas.UseVisualStyleBackColor = true;
+            this.radioButtonMas.CheckedChanged += new System.EventHandler(this.radioButtonMas_CheckedChanged);
             // 
             // radioButtonFem
             // 
             this.radioButtonFem.AutoSize = true;
             this.radioButtonFem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFem.Location = new System.Drawing.Point(379, 288);
+            this.radioButtonFem.Location = new System.Drawing.Point(382, 242);
             this.radioButtonFem.Name = "radioButtonFem";
             this.radioButtonFem.Size = new System.Drawing.Size(83, 21);
             this.radioButtonFem.TabIndex = 12;
             this.radioButtonFem.TabStop = true;
             this.radioButtonFem.Text = "Feminino";
             this.radioButtonFem.UseVisualStyleBackColor = true;
+            this.radioButtonFem.CheckedChanged += new System.EventHandler(this.radioButtonFem_CheckedChanged);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(263, 382);
+            this.btnEnviar.Location = new System.Drawing.Point(103, 318);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 13;
-            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.Text = "Salvar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.btnTela2_Click);
             // 
@@ -189,12 +172,10 @@
             this.Controls.Add(this.radioButtonFem);
             this.Controls.Add(this.radioButtonMas);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxCNH);
             this.Controls.Add(this.textBoxCPF);
             this.Controls.Add(this.textBoxRG);
             this.Controls.Add(this.btnTela3);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.doc);
@@ -210,12 +191,10 @@
         private System.Windows.Forms.Label doc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnTela3;
         private System.Windows.Forms.TextBox textBoxRG;
         private System.Windows.Forms.TextBox textBoxCPF;
-        private System.Windows.Forms.TextBox textBoxCNH;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButtonMas;
         private System.Windows.Forms.RadioButton radioButtonFem;

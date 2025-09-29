@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindoFormAtv3.global;
 
 namespace WindoFormAtv3
 {
@@ -37,6 +38,12 @@ namespace WindoFormAtv3
 
         private void btnTela2_Click(object sender, EventArgs e)
         {
+            VariaveisGlobais.rg = textBoxRG.Text;
+            VariaveisGlobais.cpr = textBoxCPF.Text;
+            MessageBox.Show($"RG: {VariaveisGlobais.rg}, CPF: {VariaveisGlobais.cpr}, Sexo: {VariaveisGlobais.sexo}");
+            //VariaveisGlobais.SalvarEmArquivo();
+
+
 
         }
 
@@ -44,10 +51,19 @@ namespace WindoFormAtv3
         {
             Interesses interesses = new Interesses();
             interesses.Show();
-
             this.Close();   
 
 
+        }
+
+        private void radioButtonMas_CheckedChanged(object sender, EventArgs e)
+        {
+            VariaveisGlobais.sexo = "Masculino";
+        }
+
+        private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
+        {
+            VariaveisGlobais.sexo = "Feminino";
         }
     }
 }

@@ -33,7 +33,6 @@
             this.btnTela2 = new System.Windows.Forms.Button();
             this.btnTela3 = new System.Windows.Forms.Button();
             this.viagem = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -49,12 +48,13 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(119, 388);
+            this.btnEnviar.Location = new System.Drawing.Point(113, 189);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 1;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnTela2
             // 
@@ -85,26 +85,18 @@
             this.viagem.TabIndex = 6;
             this.viagem.Text = "Viagem";
             this.viagem.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(251, 107);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(54, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Jogos";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.viagem.CheckedChanged += new System.EventHandler(this.viagem_CheckedChanged);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(403, 107);
+            this.checkBox3.Location = new System.Drawing.Point(248, 107);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(61, 17);
             this.checkBox3.TabIndex = 8;
             this.checkBox3.Text = "Cinema";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // Interesses
             // 
@@ -112,7 +104,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.viagem);
             this.Controls.Add(this.btnTela3);
             this.Controls.Add(this.btnTela2);
@@ -132,7 +123,6 @@
         private System.Windows.Forms.Button btnTela2;
         private System.Windows.Forms.Button btnTela3;
         private System.Windows.Forms.CheckBox viagem;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
     }
 }

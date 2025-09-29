@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -19,13 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\Form3.cs",
+              "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs",
+              "RelativeToolTip": "WindoFormAtv3\\Form3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T01:39:50.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs",
               "RelativeDocumentMoniker": "WindoFormAtv3\\Form3.cs",
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs [Design]",
               "RelativeToolTip": "WindoFormAtv3\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T00:22:55.254Z",
+              "WhenOpened": "2025-09-29T01:35:58.218Z",
               "EditorCaption": " [Design]"
             }
           ]
