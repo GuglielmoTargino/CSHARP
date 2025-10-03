@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,8 +42,7 @@
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs [Design]",
               "RelativeToolTip": "WindoFormAtv3\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T01:35:58.218Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-29T01:35:58.218Z"
             }
           ]
         }

@@ -10,7 +10,6 @@ C:\Users\Aluno.SA-LAB05-42\source\repos\WindoFormAtv3\WindoFormAtv3\obj\Debug\Wi
 C:\Users\Aluno.SA-LAB05-42\source\repos\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.exe
 C:\Users\Aluno.SA-LAB05-42\source\repos\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.pdb
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.csproj.AssemblyReference.cache
-C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.exe.config
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.TelaLogin.resources
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.TelaDoc.resources
 C:\GIT_REP_CSHARP\CSHARP\WindoFormAtv3\WindoFormAtv3\obj\Debug\WindoFormAtv3.Properties.Resources.resources
