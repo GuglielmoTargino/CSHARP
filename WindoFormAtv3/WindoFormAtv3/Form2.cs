@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,31 @@ namespace WindoFormAtv3
 
 
 
+            try
+            {
+                string dados = " datasource=localhost; username=ght; password=4004; database=carro";
+                //criar connec
+                var Conexao = new MySqlConnection(dados);
+
+                /// exec query
+
+                string sql = " INSERT INTO atv3 (rg, cpr, sexo, nome, dtnasc, interesse) VALUES('guga', 'gugu','gugu','ugg','gugu','gugu')";
+
+                MySqlCommand comando = new MySqlCommand(sql,Conexao);
+                Conexao.Open();
+                comando.ExecuteReader();
+                MessageBox.Show("Dados cadastrados");
+
+                Conexao.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message );
+
+              
+            }
+
         }
 
         private void btnTela4_Click(object sender, EventArgs e)
@@ -64,6 +90,11 @@ namespace WindoFormAtv3
         private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
         {
             VariaveisGlobais.sexo = "Feminino";
+        }
+
+        private void textBoxRG_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

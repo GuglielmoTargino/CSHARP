@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindoFormAtv3.global;
 
+
 namespace WindoFormAtv3
 {
     public partial class DadosPessoais : Form
     {
+
+
         public DadosPessoais()
         {
             InitializeComponent();
@@ -47,6 +50,11 @@ namespace WindoFormAtv3
             VariaveisGlobais.dtnasc = tBoxNasc.Text;
             MessageBox.Show($"NOME: {VariaveisGlobais.nome}, DATA_NASC: {VariaveisGlobais.dtnasc}");
             //VariaveisGlobais.SalvarEmArquivo();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

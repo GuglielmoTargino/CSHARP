@@ -1,0 +1,17 @@
+AULA1_SLQLITE
+
+https://www.google.com/search?sca_esv=83beed824cc47635&rlz=1C1GCEA_enBR1123BR1123&udm=7&fbs=AIIjpHydJdUtNKrM02hj0s
+4nbm4yz2OIO8EWX9DX1JDOVfANVg6Sh_lKDjgvwZnNaD_Hs0TDzcQziQDWl2jgV7uXSkt1nlL11ynQzUe74gsTUwteTMtd-aA4fROgs5vSMjBQmJpUe
+AVE79edFqWOUNLTQA8mewGBPZUlQCtHR7EaYdvtkxNXnElNHY4LlNe0q5_38OKOqlyqdR8tSclTT9xEhgYS-o8mhg&q=como+fazer+um+crud+em+c%
+23&sa=X&ved=2ahUKEwjmzJeQ5pqQAxWErZUCHdr5DMQQtKgLegQIFhAB&biw=1920&bih=953&dpr=1#fpstate=ive&vld=cid:64e9d7cb,vid:M3
+aSq3GPXq8,st:0
+
+
+
+create table atv3(
+rg char(20),
+cpr char(20),
+sexo char(20),
+nome char(20),
+dtnasc char(20),
+interesse char(20));

@@ -46,17 +46,17 @@
             // 
             this.doc.AutoSize = true;
             this.doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doc.Location = new System.Drawing.Point(316, 49);
+            this.doc.Location = new System.Drawing.Point(83, 9);
             this.doc.Name = "doc";
-            this.doc.Size = new System.Drawing.Size(186, 29);
+            this.doc.Size = new System.Drawing.Size(320, 29);
             this.doc.TabIndex = 0;
-            this.doc.Text = "Documentação";
+            this.doc.Text = "Documentação de Usuário";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 134);
+            this.label2.Location = new System.Drawing.Point(41, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 24);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(102, 193);
+            this.label3.Location = new System.Drawing.Point(41, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 24);
             this.label3.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(694, 49);
+            this.btnSair.Location = new System.Drawing.Point(442, 31);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
             this.btnSair.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // btnTela3
             // 
-            this.btnTela3.Location = new System.Drawing.Point(694, 112);
+            this.btnTela3.Location = new System.Drawing.Point(442, 76);
             this.btnTela3.Name = "btnTela3";
             this.btnTela3.Size = new System.Drawing.Size(75, 23);
             this.btnTela3.TabIndex = 5;
@@ -94,23 +94,24 @@
             // 
             // textBoxRG
             // 
-            this.textBoxRG.Location = new System.Drawing.Point(252, 134);
+            this.textBoxRG.Location = new System.Drawing.Point(128, 76);
             this.textBoxRG.Name = "textBoxRG";
-            this.textBoxRG.Size = new System.Drawing.Size(100, 20);
+            this.textBoxRG.Size = new System.Drawing.Size(180, 20);
             this.textBoxRG.TabIndex = 6;
+            this.textBoxRG.TextChanged += new System.EventHandler(this.textBoxRG_TextChanged);
             // 
             // textBoxCPF
             // 
-            this.textBoxCPF.Location = new System.Drawing.Point(252, 185);
+            this.textBoxCPF.Location = new System.Drawing.Point(128, 129);
             this.textBoxCPF.Name = "textBoxCPF";
-            this.textBoxCPF.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCPF.Size = new System.Drawing.Size(180, 20);
             this.textBoxCPF.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(99, 238);
+            this.label5.Location = new System.Drawing.Point(41, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 24);
             this.label5.TabIndex = 10;
@@ -120,7 +121,7 @@
             // 
             this.radioButtonMas.AutoSize = true;
             this.radioButtonMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMas.Location = new System.Drawing.Point(249, 242);
+            this.radioButtonMas.Location = new System.Drawing.Point(128, 190);
             this.radioButtonMas.Name = "radioButtonMas";
             this.radioButtonMas.Size = new System.Drawing.Size(89, 21);
             this.radioButtonMas.TabIndex = 11;
@@ -133,7 +134,7 @@
             // 
             this.radioButtonFem.AutoSize = true;
             this.radioButtonFem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFem.Location = new System.Drawing.Point(382, 242);
+            this.radioButtonFem.Location = new System.Drawing.Point(264, 190);
             this.radioButtonFem.Name = "radioButtonFem";
             this.radioButtonFem.Size = new System.Drawing.Size(83, 21);
             this.radioButtonFem.TabIndex = 12;
@@ -144,7 +145,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(103, 318);
+            this.btnEnviar.Location = new System.Drawing.Point(187, 238);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 13;
@@ -154,7 +155,7 @@
             // 
             // btnTela4
             // 
-            this.btnTela4.Location = new System.Drawing.Point(694, 182);
+            this.btnTela4.Location = new System.Drawing.Point(442, 126);
             this.btnTela4.Name = "btnTela4";
             this.btnTela4.Size = new System.Drawing.Size(75, 23);
             this.btnTela4.TabIndex = 14;
@@ -166,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(554, 298);
             this.Controls.Add(this.btnTela4);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.radioButtonFem);

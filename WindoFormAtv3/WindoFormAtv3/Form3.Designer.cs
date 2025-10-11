@@ -36,11 +36,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tboxNome = new System.Windows.Forms.TextBox();
             this.tBoxNasc = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Sair
             // 
-            this.Sair.Location = new System.Drawing.Point(713, 28);
+            this.Sair.Location = new System.Drawing.Point(413, 12);
             this.Sair.Name = "Sair";
             this.Sair.Size = new System.Drawing.Size(75, 23);
             this.Sair.TabIndex = 0;
@@ -50,7 +51,7 @@
             // 
             // Enviar
             // 
-            this.Enviar.Location = new System.Drawing.Point(66, 211);
+            this.Enviar.Location = new System.Drawing.Point(92, 232);
             this.Enviar.Name = "Enviar";
             this.Enviar.Size = new System.Drawing.Size(75, 23);
             this.Enviar.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // Tela2
             // 
-            this.Tela2.Location = new System.Drawing.Point(713, 83);
+            this.Tela2.Location = new System.Drawing.Point(413, 92);
             this.Tela2.Name = "Tela2";
             this.Tela2.Size = new System.Drawing.Size(75, 23);
             this.Tela2.TabIndex = 2;
@@ -70,7 +71,7 @@
             // 
             // Tela4
             // 
-            this.Tela4.Location = new System.Drawing.Point(713, 136);
+            this.Tela4.Location = new System.Drawing.Point(413, 135);
             this.Tela4.Name = "Tela4";
             this.Tela4.Size = new System.Drawing.Size(75, 23);
             this.Tela4.TabIndex = 3;
@@ -81,40 +82,54 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(72, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nome";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(63, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(128, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Data Nasc.";
             // 
             // tboxNome
             // 
-            this.tboxNome.Location = new System.Drawing.Point(164, 92);
+            this.tboxNome.Location = new System.Drawing.Point(138, 97);
             this.tboxNome.Name = "tboxNome";
-            this.tboxNome.Size = new System.Drawing.Size(100, 20);
+            this.tboxNome.Size = new System.Drawing.Size(196, 20);
             this.tboxNome.TabIndex = 6;
             // 
             // tBoxNasc
             // 
-            this.tBoxNasc.Location = new System.Drawing.Point(164, 136);
+            this.tBoxNasc.Location = new System.Drawing.Point(197, 151);
             this.tBoxNasc.Name = "tBoxNasc";
-            this.tBoxNasc.Size = new System.Drawing.Size(100, 20);
+            this.tBoxNasc.Size = new System.Drawing.Size(137, 20);
             this.tBoxNasc.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(155, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(211, 29);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Dados Pessoais";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DadosPessoais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(526, 325);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.tBoxNasc);
             this.Controls.Add(this.tboxNome);
             this.Controls.Add(this.label2);
@@ -140,5 +155,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tboxNome;
         private System.Windows.Forms.TextBox tBoxNasc;
+        private System.Windows.Forms.Label label3;
     }
 }

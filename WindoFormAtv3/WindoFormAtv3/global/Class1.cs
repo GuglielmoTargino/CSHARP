@@ -9,15 +9,19 @@ namespace WindoFormAtv3.global
 {
     public static class VariaveisGlobais
     {
-        public static string rg;
-        public static string cpr;
-        public static string sexo;
-        public static string nome;
-        public static string dtnasc;
-        public static string interesse;
+        public static string rg, cpr, sexo, nome, dtnasc, interesse;
+
+      
+        //public static string cpr;
+        //public static string sexo;
+        //public static string nome;
+        //public static string dtnasc;
+        //public static string interesse;
 
 
-        private static string caminhoArquivo = "C:/GIT_REP_CSHARP/CSHARP/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
+        private static string caminhoArquivo = "E:/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
+       // private static string caminhoArquivo = "C:/GIT_REP_CSHARP/CSHARP/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
+
 
         // Método para salvar no arquivo
         public static void SalvarEmArquivo()
