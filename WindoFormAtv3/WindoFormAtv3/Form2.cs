@@ -45,7 +45,7 @@ namespace WindoFormAtv3
             //VariaveisGlobais.SalvarEmArquivo();
 
 
-
+            /*
             try
             {
                 string dados = " datasource=localhost; username=ght; password=4004; database=carro";
@@ -70,7 +70,7 @@ namespace WindoFormAtv3
 
               
             }
-
+            */
         }
 
         private void btnTela4_Click(object sender, EventArgs e)

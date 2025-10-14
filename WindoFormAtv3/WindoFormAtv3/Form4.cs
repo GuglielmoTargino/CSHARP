@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using WindoFormAtv3.global;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
+
 namespace WindoFormAtv3
 {
     public partial class Interesses : Form
