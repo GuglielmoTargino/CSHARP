@@ -10,7 +10,7 @@ namespace WindoFormAtv3.global
 {
     public static class VariaveisGlobais
     {
-        public static string rg, cpr, sexo, nome, dtnasc, interesse;
+        public static string rg, cpr, sexo, nome, dtnasc, interesse = "0";
 
       
 
@@ -42,6 +42,7 @@ namespace WindoFormAtv3.global
                 string dados = " datasource=localhost; username=ght; password=4004; database=carro";
                 //criar connec
                 var Conexao = new MySqlConnection(dados);
+                Conexao.Close();
 
                 /// exec query
 
@@ -68,10 +69,10 @@ namespace WindoFormAtv3.global
             {
                 MessageBox.Show(ex.Message);
 
-
             }
-
+           
             //////////////////fim aqui
         }
+        
     }
 }

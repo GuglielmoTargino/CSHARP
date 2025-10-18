@@ -40,6 +40,7 @@
             this.radioButtonFem = new System.Windows.Forms.RadioButton();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnTela4 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // doc
@@ -94,17 +95,17 @@
             // 
             // textBoxRG
             // 
-            this.textBoxRG.Location = new System.Drawing.Point(128, 76);
+            this.textBoxRG.Location = new System.Drawing.Point(103, 76);
             this.textBoxRG.Name = "textBoxRG";
-            this.textBoxRG.Size = new System.Drawing.Size(180, 20);
+            this.textBoxRG.Size = new System.Drawing.Size(203, 20);
             this.textBoxRG.TabIndex = 6;
             this.textBoxRG.TextChanged += new System.EventHandler(this.textBoxRG_TextChanged);
             // 
             // textBoxCPF
             // 
-            this.textBoxCPF.Location = new System.Drawing.Point(128, 129);
+            this.textBoxCPF.Location = new System.Drawing.Point(103, 129);
             this.textBoxCPF.Name = "textBoxCPF";
-            this.textBoxCPF.Size = new System.Drawing.Size(180, 20);
+            this.textBoxCPF.Size = new System.Drawing.Size(134, 20);
             this.textBoxCPF.TabIndex = 7;
             // 
             // label5
@@ -145,11 +146,11 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(187, 238);
+            this.btnEnviar.Location = new System.Drawing.Point(103, 239);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 13;
-            this.btnEnviar.Text = "Salvar";
+            this.btnEnviar.Text = "Alterar";
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.btnTela2_Click);
             // 
@@ -163,11 +164,23 @@
             this.btnTela4.UseVisualStyleBackColor = true;
             this.btnTela4.Click += new System.EventHandler(this.btnTela4_Click);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(264, 126);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 15;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // TelaDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 298);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnTela4);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.radioButtonFem);
@@ -201,5 +214,6 @@
         private System.Windows.Forms.RadioButton radioButtonFem;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnTela4;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

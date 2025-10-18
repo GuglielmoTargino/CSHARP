@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,15 +27,9 @@ namespace WindoFormAtv3
 
         private void btnTela3_Click(object sender, EventArgs e)
         {
-            //this.Close();
-            //this.Hide();
-           
-            
-
             DadosPessoais dadosPessoais = new DadosPessoais();
             dadosPessoais.Show();
             this.Close();
-
         }
 
         private void btnTela2_Click(object sender, EventArgs e)
@@ -42,44 +37,14 @@ namespace WindoFormAtv3
             VariaveisGlobais.rg = textBoxRG.Text;
             VariaveisGlobais.cpr = textBoxCPF.Text;
             MessageBox.Show($"RG: {VariaveisGlobais.rg}, CPF: {VariaveisGlobais.cpr}, Sexo: {VariaveisGlobais.sexo}");
-            //VariaveisGlobais.SalvarEmArquivo();
-
-
-            /*
-            try
-            {
-                string dados = " datasource=localhost; username=ght; password=4004; database=carro";
-                //criar connec
-                var Conexao = new MySqlConnection(dados);
-
-                /// exec query
-
-                string sql = " INSERT INTO atv3 (rg, cpr, sexo, nome, dtnasc, interesse) VALUES('guga', 'gugu','gugu','ugg','gugu','gugu')";
-
-                MySqlCommand comando = new MySqlCommand(sql,Conexao);
-                Conexao.Open();
-                comando.ExecuteReader();
-                MessageBox.Show("Dados cadastrados");
-
-                Conexao.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message );
-
-              
-            }
-            */
+      
         }
 
         private void btnTela4_Click(object sender, EventArgs e)
         {
             Interesses interesses = new Interesses();
             interesses.Show();
-            this.Close();   
-
-
+            this.Close();
         }
 
         private void radioButtonMas_CheckedChanged(object sender, EventArgs e)
@@ -94,6 +59,54 @@ namespace WindoFormAtv3
 
         private void textBoxRG_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string cpr = textBoxCPF.Text;
+
+            string dados = " datasource=localhost; username=ght; password=4004; database=carro";
+            //criar connec
+            var Conexao = new MySqlConnection(dados);
+
+
+            string sql = "SELECT rg, sexo, nome, dtnasc, interesse, cpr FROM atv3 WHERE cpr = @cpr";
+            MySqlCommand comando = new MySqlCommand(sql, Conexao);
+            comando.Parameters.AddWithValue("@cpr", cpr); // variável cpr deve estar preenchida
+
+            Conexao.Open();
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.Read())
+            {
+                string rg = reader["rg"].ToString();
+                string sexo = reader["sexo"].ToString();
+                string nome = reader["nome"].ToString();
+                string dtnasc = reader["dtnasc"].ToString(); // ou DateTime.Parse se quiser como data
+                string interesse = reader["interesse"].ToString();
+                string cpf = reader["cpr"].ToString();
+
+                // Agora você pode usar essas variáveis como quiser
+                MessageBox.Show($"Nome: {nome}, Sexo: {sexo}");
+
+                textBoxRG.Text = rg;
+            
+                VariaveisGlobais.rg = rg;
+                VariaveisGlobais.sexo = sexo;
+                VariaveisGlobais.nome = nome;
+                VariaveisGlobais.dtnasc= dtnasc;
+                VariaveisGlobais.interesse = interesse;
+                VariaveisGlobais.cpr = textBoxCPF.Text;
+
+            }
+            else
+            {
+                MessageBox.Show("CPF não encontrado.");
+            }
+
+            reader.Close();
+            Conexao.Close();
 
         }
     }

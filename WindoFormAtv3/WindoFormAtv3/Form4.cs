@@ -23,25 +23,34 @@ namespace WindoFormAtv3
         public Interesses()
         {
             InitializeComponent();
-
             comboBox1.Items.Add("Lazer");
             comboBox1.Items.Add("Trabalho");
 
-         
-            
+            lblRg.Text = "RG:" + VariaveisGlobais.rg.ToString();
+            lblCpf.Text = "CPF:" + VariaveisGlobais.cpr.ToString();
+            lblSexo.Text = "SEXO:" + VariaveisGlobais.sexo.ToString();
+            lblNome.Text = "Nome:" + VariaveisGlobais.nome.ToString();
+            lblNasc.Text = "Data Nasc.:" + VariaveisGlobais.dtnasc.ToString();
         }
 
         String vbox;
 
+
+
+
+
+
+
         private void btnTela2_Click(object sender, EventArgs e)
-        {
-            
+        {            
             TelaDoc telaDoc = new TelaDoc();
             telaDoc.Show();
             this.Close();
-
-
         }
+
+
+
+
 
         private void btnTela3_Click(object sender, EventArgs e)
         {
@@ -60,16 +69,19 @@ namespace WindoFormAtv3
         {
             VariaveisGlobais.SalvarEmArquivo();
             MessageBox.Show($"INTERESSE: {VariaveisGlobais.interesse}");
+            lblInteres.Text = "intereses:" + VariaveisGlobais.interesse.ToString();
         }
 
         private void viagem_CheckedChanged(object sender, EventArgs e)
         {
             VariaveisGlobais.interesse = "Viagens";
+            lblInteres.Text = "intereses:" + VariaveisGlobais.interesse.ToString();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             VariaveisGlobais.interesse = "Cinema";
+            lblInteres.Text = "intereses:" + VariaveisGlobais.interesse.ToString();
         }
 
         private void btnEnviar_Click_1(object sender, EventArgs e)
@@ -82,6 +94,11 @@ namespace WindoFormAtv3
         {
 
           
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -1,6 +1,6 @@
-RG=895623
-CPF=025656
-SEXO =Feminino
-NOME = Andrea
-DATA_NASC=2fev
-INRETSSES=Cinema
+RG=guga
+CPF=gugu
+SEXO =gugu
+NOME = duda
+DATA_NASC=45
+INRETSSES=Viagens

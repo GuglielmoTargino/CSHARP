@@ -55,7 +55,7 @@
             this.Enviar.Name = "Enviar";
             this.Enviar.Size = new System.Drawing.Size(75, 23);
             this.Enviar.TabIndex = 1;
-            this.Enviar.Text = "Salvar";
+            this.Enviar.Text = "Alterar";
             this.Enviar.UseVisualStyleBackColor = true;
             this.Enviar.Click += new System.EventHandler(this.Enviar_Click);
             // 
