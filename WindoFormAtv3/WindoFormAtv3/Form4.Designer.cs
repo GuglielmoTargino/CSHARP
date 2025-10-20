@@ -77,21 +77,21 @@
             // 
             // btnTela2
             // 
-            this.btnTela2.Location = new System.Drawing.Point(799, 53);
+            this.btnTela2.Location = new System.Drawing.Point(736, 53);
             this.btnTela2.Name = "btnTela2";
-            this.btnTela2.Size = new System.Drawing.Size(75, 23);
+            this.btnTela2.Size = new System.Drawing.Size(138, 23);
             this.btnTela2.TabIndex = 2;
-            this.btnTela2.Text = "Tela2";
+            this.btnTela2.Text = "Edite RG/CPF/Sexo";
             this.btnTela2.UseVisualStyleBackColor = true;
             this.btnTela2.Click += new System.EventHandler(this.btnTela2_Click);
             // 
             // btnTela3
             // 
-            this.btnTela3.Location = new System.Drawing.Point(799, 96);
+            this.btnTela3.Location = new System.Drawing.Point(736, 96);
             this.btnTela3.Name = "btnTela3";
-            this.btnTela3.Size = new System.Drawing.Size(75, 23);
+            this.btnTela3.Size = new System.Drawing.Size(138, 23);
             this.btnTela3.TabIndex = 3;
-            this.btnTela3.Text = "Tela3";
+            this.btnTela3.Text = "Edite Nome/DT.Nasc.";
             this.btnTela3.UseVisualStyleBackColor = true;
             this.btnTela3.Click += new System.EventHandler(this.btnTela3_Click);
             // 
