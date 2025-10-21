@@ -66,7 +66,7 @@ namespace WindoFormAtv3
         {
             string cpr = textBoxCPF.Text;
 
-            string dados = " datasource=localhost; username=ght; password=4004; database=carro";
+            string dados = "datasource=localhost; username=ght; password=4004; database=carro";
             //criar connec
             var Conexao = new MySqlConnection(dados);
 

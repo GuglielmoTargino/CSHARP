@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -99,6 +100,35 @@ namespace WindoFormAtv3
 
         private void label14_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   
+
+
+            try
+            {
+                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
+                using (MySqlConnection Conexao = new MySqlConnection(dados))
+                {
+                    Conexao.Open();
+
+                    string sql = "DELETE FROM atv3 WHERE cpr = @cpr";
+                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
+                    {
+                        comando.Parameters.AddWithValue("@cpr", VariaveisGlobais.cpr);
+
+                        int linhas = comando.ExecuteNonQuery();
+                        MessageBox.Show(linhas > 0 ? "Registro deletado!" : "Nenhum registro encontrado.");
+                        Conexao.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
 
         }
     }
