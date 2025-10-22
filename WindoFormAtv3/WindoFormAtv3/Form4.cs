@@ -88,6 +88,36 @@ namespace WindoFormAtv3
         private void btnEnviar_Click_1(object sender, EventArgs e)
         {
 
+            try
+            {
+                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
+                using (MySqlConnection Conexao = new MySqlConnection(dados))
+                {
+                    Conexao.Open();
+
+                    string sql = "UPDATE atv3 SET nome = @nome, sexo = @sexo, rg = @rg, dtnasc = @dtnasc, interesse = @interesse WHERE cpr = @cpr";
+                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
+                    {
+                        comando.Parameters.AddWithValue("@rg", VariaveisGlobais.rg);
+                        comando.Parameters.AddWithValue("@sexo", VariaveisGlobais.sexo);
+                        comando.Parameters.AddWithValue("@cpr", VariaveisGlobais.cpr);
+                        comando.Parameters.AddWithValue("@dtnasc", VariaveisGlobais.dtnasc);
+                        comando.Parameters.AddWithValue("@interesse", VariaveisGlobais.interesse);
+                        comando.Parameters.AddWithValue("@nome", VariaveisGlobais.nome);
+
+                        int linhas = comando.ExecuteNonQuery();
+                        MessageBox.Show(linhas > 0 ? "Registro atualizado!" : "Nenhum registro encontrado para atualizar.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+
+
+
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

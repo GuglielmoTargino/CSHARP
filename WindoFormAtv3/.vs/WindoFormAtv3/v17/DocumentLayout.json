@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\Form4.cs",
+              "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs",
+              "RelativeToolTip": "WindoFormAtv3\\Form4.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAqwFwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T22:25:43.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\Form4.cs",
+              "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs [Design]",
+              "RelativeToolTip": "WindoFormAtv3\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T22:25:32.027Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form3.cs",
               "RelativeDocumentMoniker": "WindoFormAtv3\\Form3.cs",
@@ -41,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form2.cs",
               "RelativeDocumentMoniker": "WindoFormAtv3\\Form2.cs",
@@ -54,27 +87,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form2.cs",
               "RelativeDocumentMoniker": "WindoFormAtv3\\Form2.cs",
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form2.cs [Design]",
               "RelativeToolTip": "WindoFormAtv3\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:44:28.654Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-18T13:44:28.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\global\\Class1.cs",
               "RelativeDocumentMoniker": "WindoFormAtv3\\global\\Class1.cs",
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\global\\Class1.cs",
               "RelativeToolTip": "WindoFormAtv3\\global\\Class1.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAwAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:13:24.902Z"
+              "WhenOpened": "2025-10-18T13:13:24.902Z",
+              "EditorCaption": ""
             }
           ]
         }
