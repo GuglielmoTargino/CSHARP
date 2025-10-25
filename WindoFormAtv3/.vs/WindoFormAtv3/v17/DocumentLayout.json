@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|c:\\git_rep_csharp\\csharp\\windoformatv3\\windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "WindoFormAtv3\\Form4.cs",
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs",
               "RelativeToolTip": "WindoFormAtv3\\Form4.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAqwFwAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T22:25:43.359Z",
               "EditorCaption": ""
@@ -58,8 +58,7 @@
               "ToolTip": "C:\\GIT_REP_CSHARP\\CSHARP\\WindoFormAtv3\\WindoFormAtv3\\Form4.cs [Design]",
               "RelativeToolTip": "WindoFormAtv3\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T22:25:32.027Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-21T22:25:32.027Z"
             },
             {
               "$type": "Document",
@@ -82,8 +81,7 @@
               "RelativeToolTip": "WindoFormAtv3\\Form2.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAwwEQAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:44:31.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T13:44:31.982Z"
             },
             {
               "$type": "Document",
@@ -106,8 +104,7 @@
               "RelativeToolTip": "WindoFormAtv3\\global\\Class1.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T13:13:24.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T13:13:24.902Z"
             }
           ]
         }
