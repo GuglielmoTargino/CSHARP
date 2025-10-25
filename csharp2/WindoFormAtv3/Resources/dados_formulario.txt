@@ -1,0 +1,6 @@
+RG=df
+CPF=df
+SEXO =Masculino
+NOME = df
+DATA_NASC=df
+INRETSSES=Viagens

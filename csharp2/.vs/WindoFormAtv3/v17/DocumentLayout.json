@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\csharp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|h:\\csharp2\\windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\global\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|H:\\csharp2\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|H:\\csharp2\\windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{000CCF7A-A551-481C-A28B-DA46493CF065}|WindoFormAtv3\\WindoFormAtv3.csproj|solutionrelative:windoformatv3\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "H:\\csharp2\\WindoFormAtv3\\Form4.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\Form4.cs",
+              "ToolTip": "H:\\csharp2\\WindoFormAtv3\\Form4.cs",
+              "RelativeToolTip": "WindoFormAtv3\\Form4.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T02:11:43.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "H:\\csharp2\\WindoFormAtv3\\Form4.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\Form4.cs",
+              "ToolTip": "H:\\csharp2\\WindoFormAtv3\\Form4.cs [Design]",
+              "RelativeToolTip": "WindoFormAtv3\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T02:11:44.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "H:\\csharp2\\WindoFormAtv3\\global\\Class1.cs",
+              "RelativeDocumentMoniker": "WindoFormAtv3\\global\\Class1.cs",
+              "ToolTip": "H:\\csharp2\\WindoFormAtv3\\global\\Class1.cs",
+              "RelativeToolTip": "WindoFormAtv3\\global\\Class1.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T02:11:44.452Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
