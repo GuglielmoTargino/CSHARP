@@ -13,9 +13,6 @@ namespace WindoFormAtv3.global
     {
         public static string rg, cpr, sexo, nome, dtnasc, interesse = "0";
 
-      
-
-
        private static string caminhoArquivo = "H:/csharp2/WindoFormAtv3/Resources/dados_formulario.txt";
         //private static string caminhoArquivo = "C:/GIT_REP_CSHARP/CSHARP/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
 
@@ -41,48 +38,6 @@ namespace WindoFormAtv3.global
 
             // Salvar no bd aqui
 
-            /*
-
-            try
-            {   
-                
-                string dados = " datasource=localhost; username=ght; password=4004; database=carro";
-                                            //criar connec
-                var Conexao = new MySqlConnection(dados);
-                Conexao.Close();
-
-                /// exec query
-
-                string sql = " INSERT INTO atv3 (rg, cpr, sexo, nome, dtnasc, interesse) VALUES(@rg, @cpr, @sexo, @nome, @dtnasc, @interesse)";
-
-                MySqlCommand comando = new MySqlCommand(sql, Conexao);
-
-                comando.Parameters.AddWithValue("@rg", rg);
-                comando.Parameters.AddWithValue("@cpr", cpr);
-                comando.Parameters.AddWithValue("@sexo", sexo);
-                comando.Parameters.AddWithValue("@nome", nome);
-                comando.Parameters.AddWithValue("@dtnasc", dtnasc);
-                comando.Parameters.AddWithValue("@interesse", interesse);
-
-                Conexao.Open();
-                comando.ExecuteReader();
-             
-                MessageBox.Show("Dados cadastrados");
-
-                Conexao.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
-
-            */
-            //////////////////fim aqui MYDQL LocalHost
-
-            
-
             try
             {
                 string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
@@ -95,41 +50,37 @@ namespace WindoFormAtv3.global
                     Console.WriteLine("Conexão estabelecida com sucesso!");
 
                     // Dados a serem inseridos
-                    string nome = "Dara Porca";
-                    string telefone = "(11) 98765-4321";
+                    string nome = VariaveisGlobais.nome;
+                    string rg = VariaveisGlobais.rg;
+                    string cpr = VariaveisGlobais.cpr;
+                    string sexo = VariaveisGlobais.sexo;
+                    string dtnasc = VariaveisGlobais.dtnasc;
+                    string interesse = VariaveisGlobais.interesse;
 
                     // Comando INSERT
-                    string sql = "INSERT INTO usuario (nome, telefone) VALUES (@nome,@telefone)";
+                    string sql = "INSERT INTO atv3 (nome,rg,cpr,sexo,dtnasc,interesse) VALUES (@nome,@rg,@cpr,@sexo,@dtnasc,@interesse)";
 
                     using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
                     {
+                        comando.Parameters.AddWithValue("@rg", rg);
+                        comando.Parameters.AddWithValue("@cpr", cpr);
+                        comando.Parameters.AddWithValue("@sexo", sexo);
                         comando.Parameters.AddWithValue("@nome", nome);
-                        comando.Parameters.AddWithValue("@telefone", telefone);
+                        comando.Parameters.AddWithValue("@dtnasc", dtnasc);
+                        comando.Parameters.AddWithValue("@interesse", interesse);
 
                         int linhasAfetadas = comando.ExecuteNonQuery();
-                        Console.WriteLine($"{linhasAfetadas} registro(s) inserido(s) com sucesso.");
+                       // Console.WriteLine($"{linhasAfetadas} registro(s) inserido(s) com sucesso.");
+                        MessageBox.Show("DADOS CADASTRADOS");
                     }
                 }
             }
             catch (Exception ex)
-            {
-                Console.WriteLine("Ocorreu um erro: " + ex.Message);
-                Console.WriteLine("Detalhes: " + ex.StackTrace);
+            {   
 
-                
-            
                 MessageBox.Show("Erro ao salvar no SQLite: " + ex.Message);
-                Console.WriteLine("STACKTRACE => " + ex.StackTrace);
+                
             }
         }
-
-            ///////////////////Fim SQLITE
-
-
-
-
-
         }
-
-        
 }

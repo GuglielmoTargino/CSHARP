@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
@@ -66,47 +67,50 @@ namespace WindoFormAtv3
         {
             string cpr = textBoxCPF.Text;
 
-            string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-            //criar connec
-            var Conexao = new MySqlConnection(dados);
+            string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
+            string conexaoString = $"Data Source={caminhoBanco};Version=3;";
+            Console.WriteLine("Usando banco em: " + caminhoBanco);
 
-
-            string sql = "SELECT rg, sexo, nome, dtnasc, interesse, cpr FROM atv3 WHERE cpr = @cpr";
-            MySqlCommand comando = new MySqlCommand(sql, Conexao);
-            comando.Parameters.AddWithValue("@cpr", cpr); // variável cpr deve estar preenchida
-
-            Conexao.Open();
-            MySqlDataReader reader = comando.ExecuteReader();
-
-            if (reader.Read())
+            using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
             {
-                string rg = reader["rg"].ToString();
-                string sexo = reader["sexo"].ToString();
-                string nome = reader["nome"].ToString();
-                string dtnasc = reader["dtnasc"].ToString(); // ou DateTime.Parse se quiser como data
-                string interesse = reader["interesse"].ToString();
-                string cpf = reader["cpr"].ToString();
+                conexao.Open();
+                Console.WriteLine("Conexão estabelecida com sucesso!");
+                
+                string sql = "SELECT rg, sexo, nome, dtnasc, interesse, cpr FROM atv3 WHERE cpr = @cpr";
 
-                // Agora você pode usar essas variáveis como quiser
-                MessageBox.Show($"Nome: {nome}, Sexo: {sexo}");
+                using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
+                {
+                    comando.Parameters.AddWithValue("@cpr", cpr);
+                    using (SQLiteDataReader reader = comando.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Carrega os valores do banco
+                            string rg = reader["rg"].ToString();
+                            string sexo = reader["sexo"].ToString();
+                            string nome = reader["nome"].ToString();
+                            string dtnasc = reader["dtnasc"].ToString();
+                            string interesse = reader["interesse"].ToString();
 
-                textBoxRG.Text = rg;
-            
-                VariaveisGlobais.rg = rg;
-                VariaveisGlobais.sexo = sexo;
-                VariaveisGlobais.nome = nome;
-                VariaveisGlobais.dtnasc= dtnasc;
-                VariaveisGlobais.interesse = interesse;
-                VariaveisGlobais.cpr = textBoxCPF.Text;
+                            // Exibe nos textboxes
+                            textBoxRG.Text = rg;
+                            // Se quiser guardar em variáveis globais também
+                            VariaveisGlobais.rg = rg;
+                            VariaveisGlobais.nome = nome;
+                            VariaveisGlobais.sexo = sexo;
+                            VariaveisGlobais.dtnasc = dtnasc;
+                            VariaveisGlobais.interesse = interesse;
+                            VariaveisGlobais.cpr = reader["cpr"].ToString();
 
+                            MessageBox.Show("Registro encontrado!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("CPF não encontrado no banco de dados.");
+                        }
+                    }
+                }
             }
-            else
-            {
-                MessageBox.Show("CPF não encontrado.");
-            }
-
-            reader.Close();
-            Conexao.Close();
 
         }
     }

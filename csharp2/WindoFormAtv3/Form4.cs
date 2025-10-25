@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,30 +18,18 @@ namespace WindoFormAtv3
 {
     public partial class Interesses : Form
     {
-
-
-       
-
         public Interesses()
         {
             InitializeComponent();
             comboBox1.Items.Add("Lazer");
             comboBox1.Items.Add("Trabalho");
 
-            lblRg.Text = "RG:" + VariaveisGlobais.rg.ToString();
-            lblCpf.Text = "CPF:" + VariaveisGlobais.cpr.ToString();
-            lblSexo.Text = "SEXO:" + VariaveisGlobais.sexo.ToString();
-            lblNome.Text = "Nome:" + VariaveisGlobais.nome.ToString();
-            lblNasc.Text = "Data Nasc.:" + VariaveisGlobais.dtnasc.ToString();
+            lblRg.Text = "-" + VariaveisGlobais.rg.ToString();
+            lblCpf.Text = "-" + VariaveisGlobais.cpr.ToString();
+            lblSexo.Text = "-" + VariaveisGlobais.sexo.ToString();
+            lblNome.Text = "-" + VariaveisGlobais.nome.ToString();
+            lblNasc.Text = "-" + VariaveisGlobais.dtnasc.ToString();
         }
-
-        String vbox;
-
-
-
-
-
-
 
         private void btnTela2_Click(object sender, EventArgs e)
         {            
@@ -48,10 +37,6 @@ namespace WindoFormAtv3
             telaDoc.Show();
             this.Close();
         }
-
-
-
-
 
         private void btnTela3_Click(object sender, EventArgs e)
         {
@@ -69,7 +54,7 @@ namespace WindoFormAtv3
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             VariaveisGlobais.SalvarEmArquivo();
-            MessageBox.Show($"INTERESSE: {VariaveisGlobais.interesse}");
+     
             lblInteres.Text = "intereses:" + VariaveisGlobais.interesse.ToString();
         }
 
@@ -90,13 +75,16 @@ namespace WindoFormAtv3
 
             try
             {
-                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-                using (MySqlConnection Conexao = new MySqlConnection(dados))
+                string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
+                string conexaoString = $"Data Source={caminhoBanco};Version=3;";
+                Console.WriteLine("Usando banco em: " + caminhoBanco);
+
+                using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
                 {
-                    Conexao.Open();
+                    conexao.Open();
 
                     string sql = "UPDATE atv3 SET nome = @nome, sexo = @sexo, rg = @rg, dtnasc = @dtnasc, interesse = @interesse WHERE cpr = @cpr";
-                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
+                    using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
                     {
                         comando.Parameters.AddWithValue("@rg", VariaveisGlobais.rg);
                         comando.Parameters.AddWithValue("@sexo", VariaveisGlobais.sexo);
@@ -134,32 +122,53 @@ namespace WindoFormAtv3
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   
+        {
 
+            
 
             try
             {
-                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-                using (MySqlConnection Conexao = new MySqlConnection(dados))
+                string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
+                string conexaoString = $"Data Source={caminhoBanco};Version=3;";
+                Console.WriteLine("Usando banco em: " + caminhoBanco);
+
+                using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
                 {
-                    Conexao.Open();
+                    conexao.Open();
+                    Console.WriteLine("Conexão estabelecida com sucesso!");
 
-                    string sql = "INSERT INTO usuario (nome, telefone) VALUES (@nome, @telefone)";
-                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
+                    // Dados a serem inseridos
+                    string nome = VariaveisGlobais.nome;
+                    string rg = VariaveisGlobais.rg;
+                    string cpr = VariaveisGlobais.cpr;
+                    string sexo = VariaveisGlobais.sexo;
+                    string dtnasc = VariaveisGlobais.dtnasc;
+                    string interesse = VariaveisGlobais.interesse;
+
+                    // Comando INSERT
+                    string sql = "DELETE FROM atv3 WHERE cpr= @cpr";
+
+                    using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
                     {
-                        comando.Parameters.AddWithValue("@cpr", VariaveisGlobais.cpr);
-
-                        int linhas = comando.ExecuteNonQuery();
-                        MessageBox.Show(linhas > 0 ? "Registro deletado!" : "Nenhum registro encontrado.");
-                        Conexao.Close();
+                        comando.Parameters.AddWithValue("@cpr", cpr);        
+                        int linhasAfetadas = comando.ExecuteNonQuery();
+                        MessageBox.Show($"REGISTRO DELETADO");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro: " + ex.Message);
+                Console.WriteLine("Ocorreu um erro: " + ex.Message);
+                Console.WriteLine("Detalhes: " + ex.StackTrace);
+                MessageBox.Show("Erro ao salvar no SQLite: " + ex.Message);
+                Console.WriteLine("STACKTRACE => " + ex.StackTrace);
             }
-
         }
+
+
+
+
+
     }
+    
 }

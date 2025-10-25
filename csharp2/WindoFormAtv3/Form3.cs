@@ -23,13 +23,9 @@ namespace WindoFormAtv3
 
         private void Tela2_Click(object sender, EventArgs e)
         {
-            
-
             TelaDoc telaDoc = new TelaDoc();
             telaDoc.Show();
             this.Close();
-
-
         }
 
         private void Tela4_Click(object sender, EventArgs e)
