@@ -1,0 +1,15 @@
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\bin\Debug\net8.0\ExecAula3.exe
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\bin\Debug\net8.0\ExecAula3.deps.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\bin\Debug\net8.0\ExecAula3.runtimeconfig.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\bin\Debug\net8.0\ExecAula3.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\bin\Debug\net8.0\ExecAula3.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.AssemblyInfoInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.AssemblyInfo.cs
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.csproj.CoreCompileInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.sourcelink.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\refint\ExecAula3.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ExecAula3.genruntimeconfig.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula3\ExecAula3\obj\Debug\net8.0\ref\ExecAula3.dll

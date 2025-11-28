@@ -10,8 +10,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindoFormAtv3.global;
+using WindoFormAtv3.SistemaDao;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+/*
+ Atividade-IV (em grupo) desenvolvida em sala de aula valendo nota da AV1.
+
+Prof: Joao Vagner Pereira Da Silva
+
+Alunos: Guglielmo Henriques Targino
+RA: 2222104623
+
+Marcelo Vitor Duarte Ramos de Jesus
+RA:2223100385
+
+Data: 08Nov25.
+Versão: v4
+
+Escopo;
+Conforme demostrado e projetado em sala de aula :
+
+crie um pequeno formulário que escreva em um Banco de dados, dê preferença ao SQLite portable
+
+Obs: O SGBD SQLite portable se encontra instalado na pasta resources.
+ 
+ */
 
 
 namespace WindoFormAtv3
@@ -75,13 +98,22 @@ namespace WindoFormAtv3
 
             try
             {
-                string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
-                string conexaoString = $"Data Source={caminhoBanco};Version=3;";
-                Console.WriteLine("Usando banco em: " + caminhoBanco);
+               
+                string conexaoString = "";
+                ConexaoBD conn = new ConexaoBD();
+                conexaoString = conn.ConectarBD();
 
                 using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
                 {
-                    conexao.Open();
+                    try
+                    {
+                        conexao.Open();
+                        Console.WriteLine("Conexão estabelecida com sucesso!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
                     string sql = "UPDATE atv3 SET nome = @nome, sexo = @sexo, rg = @rg, dtnasc = @dtnasc, interesse = @interesse WHERE cpr = @cpr";
                     using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
@@ -102,17 +134,10 @@ namespace WindoFormAtv3
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
-
-
-
-
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
-        {
-
-          
+        {          
 
         }
 
@@ -122,20 +147,25 @@ namespace WindoFormAtv3
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
-            
+        {            
 
             try
             {
-                string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
-                string conexaoString = $"Data Source={caminhoBanco};Version=3;";
-                Console.WriteLine("Usando banco em: " + caminhoBanco);
+                string conexaoString = "";
+                ConexaoBD conn = new ConexaoBD();
+                conexaoString = conn.ConectarBD();
 
                 using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
                 {
-                    conexao.Open();
-                    Console.WriteLine("Conexão estabelecida com sucesso!");
+                    try
+                    {
+                        conexao.Open();
+                        Console.WriteLine("Conexão estabelecida com sucesso!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
                     // Dados a serem inseridos
                     string nome = VariaveisGlobais.nome;
@@ -164,11 +194,5 @@ namespace WindoFormAtv3
                 Console.WriteLine("STACKTRACE => " + ex.StackTrace);
             }
         }
-
-
-
-
-
-    }
-    
+    }    
 }

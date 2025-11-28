@@ -1,0 +1,15 @@
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\bin\Debug\net8.0\ExecAula2.exe
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\bin\Debug\net8.0\ExecAula2.deps.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\bin\Debug\net8.0\ExecAula2.runtimeconfig.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\bin\Debug\net8.0\ExecAula2.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\bin\Debug\net8.0\ExecAula2.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.AssemblyInfoInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.AssemblyInfo.cs
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.csproj.CoreCompileInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.sourcelink.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\refint\ExecAula2.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ExecAula2.genruntimeconfig.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula2\ExecAula2\ExecAula2\obj\Debug\net8.0\ref\ExecAula2.dll

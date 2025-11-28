@@ -165,3 +165,4 @@ H:\csharp2\WindoFormAtv3\obj\Debug\WindoFor.ECA44088.Up2Date
 H:\csharp2\WindoFormAtv3\obj\Debug\WindoFormAtv3.exe
 H:\csharp2\WindoFormAtv3\obj\Debug\WindoFormAtv3.pdb
 H:\csharp2\WindoFormAtv3\bin\Debug\System.Data.SQLite.xml
+E:\csharp2\WindoFormAtv3\bin\Debug\System.Data.SQLite.xml

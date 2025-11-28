@@ -1,0 +1,15 @@
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.exe
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.deps.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.runtimeconfig.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\bin\Debug\net8.0\ConsoleApp11.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.AssemblyInfoInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.AssemblyInfo.cs
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.csproj.CoreCompileInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.sourcelink.json
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\refint\ConsoleApp11.dll
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.pdb
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ConsoleApp11.genruntimeconfig.cache
+C:\GIT_REP_CSHARP\CSHARP\ExecAula3\ExecAula4\ConsoleApp11\ConsoleApp11\obj\Debug\net8.0\ref\ConsoleApp11.dll

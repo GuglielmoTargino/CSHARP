@@ -41,7 +41,7 @@
             // 
             // Sair
             // 
-            this.Sair.Location = new System.Drawing.Point(413, 12);
+            this.Sair.Location = new System.Drawing.Point(419, 40);
             this.Sair.Name = "Sair";
             this.Sair.Size = new System.Drawing.Size(75, 23);
             this.Sair.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // Enviar
             // 
-            this.Enviar.Location = new System.Drawing.Point(92, 232);
+            this.Enviar.Location = new System.Drawing.Point(57, 217);
             this.Enviar.Name = "Enviar";
             this.Enviar.Size = new System.Drawing.Size(75, 23);
             this.Enviar.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // Tela2
             // 
-            this.Tela2.Location = new System.Drawing.Point(413, 92);
+            this.Tela2.Location = new System.Drawing.Point(419, 119);
             this.Tela2.Name = "Tela2";
             this.Tela2.Size = new System.Drawing.Size(75, 23);
             this.Tela2.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // Tela4
             // 
-            this.Tela4.Location = new System.Drawing.Point(413, 135);
+            this.Tela4.Location = new System.Drawing.Point(419, 163);
             this.Tela4.Name = "Tela4";
             this.Tela4.Size = new System.Drawing.Size(75, 23);
             this.Tela4.TabIndex = 3;

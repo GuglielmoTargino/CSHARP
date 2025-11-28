@@ -6,20 +6,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindoFormAtv3.SistemaDao;
+
+/*
+ Atividade-IV (em grupo) desenvolvida em sala de aula valendo nota da AV1.
+
+Prof: Joao Vagner Pereira Da Silva
+
+Alunos: Guglielmo Henriques Targino
+RA: 2222104623
+
+Marcelo Vitor Duarte Ramos de Jesus
+RA:2223100385
+
+Data: 08Nov25.
+Versão: v4
+
+Escopo;
+Conforme demostrado e projetado em sala de aula :
+
+crie um pequeno formulário que escreva em um Banco de dados, dê preferença ao SQLite portable
+
+Obs: O SGBD SQLite portable se encontra instalado na pasta resources.
+ 
+ */
 
 namespace WindoFormAtv3.global
 {
+ 
     public static class VariaveisGlobais
     {
         public static string rg, cpr, sexo, nome, dtnasc, interesse = "0";
 
-       private static string caminhoArquivo = "H:/csharp2/WindoFormAtv3/Resources/dados_formulario.txt";
-        //private static string caminhoArquivo = "C:/GIT_REP_CSHARP/CSHARP/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
-
-
-        // Método para salvar no arquivo
         public static void SalvarEmArquivo()
         {
+            
+            ConexaoBD conn = new ConexaoBD();
+            string caminhoArquivo = conn.GetConexaoString();
+
+
+            // Método para salvar no arquivo
+
+
             Console.WriteLine("=== DEBUG SQLITE ===");
             Console.WriteLine("Arquivo existe? " + System.IO.File.Exists(caminhoArquivo));
             Console.WriteLine("SQLite DLL carregada? Tentando conexão...");
@@ -40,14 +68,21 @@ namespace WindoFormAtv3.global
 
             try
             {
-                string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
-                string conexaoString = $"Data Source={caminhoBanco};Version=3;";
-                Console.WriteLine("Usando banco em: " + caminhoBanco);
+                string conexaoString = "";
+                //ConexaoBD conn = new ConexaoBD();
+                conexaoString = conn.ConectarBD();
 
                 using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
                 {
-                    conexao.Open();
-                    Console.WriteLine("Conexão estabelecida com sucesso!");
+                    try
+                    {
+                        conexao.Open();
+                        Console.WriteLine("Conexão estabelecida com sucesso!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
                     // Dados a serem inseridos
                     string nome = VariaveisGlobais.nome;

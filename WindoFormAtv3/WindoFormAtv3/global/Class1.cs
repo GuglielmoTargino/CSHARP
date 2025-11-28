@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,16 +6,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+/*
+ Atividade-3 desenvolvida em sala de aula valendo nota da AV1.
+
+Prof: Joao Vagner Pereira Da Silva
+Aluno: Guglielmo Henriques Targino
+RA: 2222104623
+Data: 08Nov25.
+Versão: v2
+
+Escopo;
+construa um sistema de cadastro com os seguintes formulários:
+
+tela inicial
+dados pessoais ( com radio buttons - sexo)
+documentação
+interesses ( checkbox)
+ botões de SAIR, INICIAL,  CONTINUA, ENVIA
+e gravar os dados em arquivo de historico ( logger) 
+Obs: Arquivo de logger fica na pasta Resources (dados_formulario.txt) 
+ 
+ */
+
 namespace WindoFormAtv3.global
 {
     public static class VariaveisGlobais
     {
         public static string rg, cpr, sexo, nome, dtnasc, interesse = "0";
 
-      
-
-
-       // private static string caminhoArquivo = "E:/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
+     
         private static string caminhoArquivo = "C:/GIT_REP_CSHARP/CSHARP/WindoFormAtv3/WindoFormAtv3/Resources/dados_formulario.txt";
 
 
@@ -34,44 +54,7 @@ namespace WindoFormAtv3.global
 
             System.IO.File.WriteAllLines(caminhoArquivo, linhas);
 
-            // Salvar no bd aqui
-
-
-            try
-            {
-                string dados = " datasource=localhost; username=ght; password=4004; database=carro";
-                //criar connec
-                var Conexao = new MySqlConnection(dados);
-                Conexao.Close();
-
-                /// exec query
-
-                string sql = " INSERT INTO atv3 (rg, cpr, sexo, nome, dtnasc, interesse) VALUES(@rg, @cpr, @sexo, @nome, @dtnasc, @interesse)";
-
-                MySqlCommand comando = new MySqlCommand(sql, Conexao);
-
-                comando.Parameters.AddWithValue("@rg", rg);
-                comando.Parameters.AddWithValue("@cpr", cpr);
-                comando.Parameters.AddWithValue("@sexo", sexo);
-                comando.Parameters.AddWithValue("@nome", nome);
-                comando.Parameters.AddWithValue("@dtnasc", dtnasc);
-                comando.Parameters.AddWithValue("@interesse", interesse);
-
-                Conexao.Open();
-                comando.ExecuteReader();
-             
-                MessageBox.Show("Dados cadastrados");
-
-                Conexao.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
-           
-            //////////////////fim aqui
+            
         }
         
     }

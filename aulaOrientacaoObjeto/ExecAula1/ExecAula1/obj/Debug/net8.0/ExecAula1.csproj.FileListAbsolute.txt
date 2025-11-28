@@ -1,0 +1,15 @@
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\bin\Debug\net8.0\ExecAula1.exe
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\bin\Debug\net8.0\ExecAula1.deps.json
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\bin\Debug\net8.0\ExecAula1.runtimeconfig.json
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\bin\Debug\net8.0\ExecAula1.dll
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\bin\Debug\net8.0\ExecAula1.pdb
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.AssemblyInfoInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.AssemblyInfo.cs
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.csproj.CoreCompileInputs.cache
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.sourcelink.json
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.dll
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\refint\ExecAula1.dll
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.pdb
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ExecAula1.genruntimeconfig.cache
+C:\GIT_REP_CSHARP\CSHARP\aulaOrientacaoObjeto\ExecAula1\ExecAula1\obj\Debug\net8.0\ref\ExecAula1.dll

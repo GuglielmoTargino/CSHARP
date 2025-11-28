@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindoFormAtv3.global;
+
+/*
+ Atividade-3 desenvolvida em sala de aula valendo nota da AV1.
+
+Prof: Joao Vagner Pereira Da Silva
+Aluno: Guglielmo Henriques Targino
+RA: 2222104623
+Data: 08Nov25.
+Versão: v2
+
+Escopo;
+construa um sistema de cadastro com os seguintes formulários:
+
+tela inicial
+dados pessoais ( com radio buttons - sexo)
+documentação
+interesses ( checkbox)
+ botões de SAIR, INICIAL,  CONTINUA, ENVIA
+e gravar os dados em arquivo de historico ( logger) 
+Obs: Arquivo de logger fica na pasta Resources (dados_formulario.txt) 
+ 
+ */
 
 namespace WindoFormAtv3
 {
@@ -64,50 +86,6 @@ namespace WindoFormAtv3
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string cpr = textBoxCPF.Text;
-
-            string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-            //criar connec
-            var Conexao = new MySqlConnection(dados);
-
-
-            string sql = "SELECT rg, sexo, nome, dtnasc, interesse, cpr FROM atv3 WHERE cpr = @cpr";
-            MySqlCommand comando = new MySqlCommand(sql, Conexao);
-            comando.Parameters.AddWithValue("@cpr", cpr); // variável cpr deve estar preenchida
-
-            Conexao.Open();
-            MySqlDataReader reader = comando.ExecuteReader();
-
-            if (reader.Read())
-            {
-                string rg = reader["rg"].ToString();
-                string sexo = reader["sexo"].ToString();
-                string nome = reader["nome"].ToString();
-                string dtnasc = reader["dtnasc"].ToString(); // ou DateTime.Parse se quiser como data
-                string interesse = reader["interesse"].ToString();
-                string cpf = reader["cpr"].ToString();
-
-                // Agora você pode usar essas variáveis como quiser
-                MessageBox.Show($"Nome: {nome}, Sexo: {sexo}");
-
-                textBoxRG.Text = rg;
-            
-                VariaveisGlobais.rg = rg;
-                VariaveisGlobais.sexo = sexo;
-                VariaveisGlobais.nome = nome;
-                VariaveisGlobais.dtnasc= dtnasc;
-                VariaveisGlobais.interesse = interesse;
-                VariaveisGlobais.cpr = textBoxCPF.Text;
-
-            }
-            else
-            {
-                MessageBox.Show("CPF não encontrado.");
-            }
-
-            reader.Close();
-            Conexao.Close();
-
-        }
+         }
     }
 }

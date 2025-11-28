@@ -67,19 +67,19 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(40, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 24);
+            this.label1.Size = new System.Drawing.Size(150, 24);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Nome Usuario";
+            this.label1.Text = "Usuario=admin";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(117, 175);
+            this.label2.Location = new System.Drawing.Point(64, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 24);
+            this.label2.Size = new System.Drawing.Size(126, 24);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Senha";
+            this.label2.Text = "Senha=1234";
             // 
             // label4
             // 

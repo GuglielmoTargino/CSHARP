@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,15 +11,32 @@ using System.Windows.Forms;
 using WindoFormAtv3.global;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+/*
+ Atividade-3 desenvolvida em sala de aula valendo nota da AV1.
 
+Prof: Joao Vagner Pereira Da Silva
+Aluno: Guglielmo Henriques Targino
+RA: 2222104623
+Data: 08Nov25.
+Versão: v2
+
+Escopo;
+construa um sistema de cadastro com os seguintes formulários:
+
+tela inicial
+dados pessoais ( com radio buttons - sexo)
+documentação
+interesses ( checkbox)
+ botões de SAIR, INICIAL,  CONTINUA, ENVIA
+e gravar os dados em arquivo de historico ( logger) 
+Obs: Arquivo de logger fica na pasta Resources (dados_formulario.txt) 
+ 
+ */
 
 namespace WindoFormAtv3
 {
     public partial class Interesses : Form
-    {
-
-
-       
+    {      
 
         public Interesses()
         {
@@ -34,25 +51,12 @@ namespace WindoFormAtv3
             lblNasc.Text = "Data Nasc.:" + VariaveisGlobais.dtnasc.ToString();
         }
 
-        String vbox;
-
-
-
-
-
-
-
         private void btnTela2_Click(object sender, EventArgs e)
         {            
             TelaDoc telaDoc = new TelaDoc();
             telaDoc.Show();
             this.Close();
         }
-
-
-
-
-
         private void btnTela3_Click(object sender, EventArgs e)
         {
             DadosPessoais dadosPessoais = new DadosPessoais();
@@ -87,45 +91,11 @@ namespace WindoFormAtv3
 
         private void btnEnviar_Click_1(object sender, EventArgs e)
         {
-
-            try
-            {
-                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-                using (MySqlConnection Conexao = new MySqlConnection(dados))
-                {
-                    Conexao.Open();
-
-                    string sql = "UPDATE atv3 SET nome = @nome, sexo = @sexo, rg = @rg, dtnasc = @dtnasc, interesse = @interesse WHERE cpr = @cpr";
-                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
-                    {
-                        comando.Parameters.AddWithValue("@rg", VariaveisGlobais.rg);
-                        comando.Parameters.AddWithValue("@sexo", VariaveisGlobais.sexo);
-                        comando.Parameters.AddWithValue("@cpr", VariaveisGlobais.cpr);
-                        comando.Parameters.AddWithValue("@dtnasc", VariaveisGlobais.dtnasc);
-                        comando.Parameters.AddWithValue("@interesse", VariaveisGlobais.interesse);
-                        comando.Parameters.AddWithValue("@nome", VariaveisGlobais.nome);
-
-                        int linhas = comando.ExecuteNonQuery();
-                        MessageBox.Show(linhas > 0 ? "Registro atualizado!" : "Nenhum registro encontrado para atualizar.");
-                    }
-                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
-            }
-
-
-
-
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
-
-          
-
         }
 
         private void label14_Click(object sender, EventArgs e)
@@ -135,31 +105,6 @@ namespace WindoFormAtv3
 
         private void button1_Click(object sender, EventArgs e)
         {   
-
-
-            try
-            {
-                string dados = "datasource=localhost; username=ght; password=4004; database=carro";
-                using (MySqlConnection Conexao = new MySqlConnection(dados))
-                {
-                    Conexao.Open();
-
-                    string sql = "DELETE FROM atv3 WHERE cpr = @cpr";
-                    using (MySqlCommand comando = new MySqlCommand(sql, Conexao))
-                    {
-                        comando.Parameters.AddWithValue("@cpr", VariaveisGlobais.cpr);
-
-                        int linhas = comando.ExecuteNonQuery();
-                        MessageBox.Show(linhas > 0 ? "Registro deletado!" : "Nenhum registro encontrado.");
-                        Conexao.Close();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
-            }
-
-        }
+         }
     }
 }

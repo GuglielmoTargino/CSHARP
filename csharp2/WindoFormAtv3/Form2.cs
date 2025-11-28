@@ -11,6 +11,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindoFormAtv3.global;
+using WindoFormAtv3.SistemaDao;
+
+/*
+ Atividade-IV (em grupo) desenvolvida em sala de aula valendo nota da AV1.
+
+Prof: Joao Vagner Pereira Da Silva
+
+Alunos: Guglielmo Henriques Targino
+RA: 2222104623
+
+Marcelo Vitor Duarte Ramos de Jesus
+RA:2223100385
+
+Data: 08Nov25.
+Versão: v4
+
+Escopo;
+Conforme demostrado e projetado em sala de aula :
+
+crie um pequeno formulário que escreva em um Banco de dados, dê preferença ao SQLite portable
+
+Obs: O SGBD SQLite portable se encontra instalado na pasta resources.
+ 
+ */
 
 namespace WindoFormAtv3
 {
@@ -67,15 +91,22 @@ namespace WindoFormAtv3
         {
             string cpr = textBoxCPF.Text;
 
-            string caminhoBanco = @"H:/csharp2/WindoFormAtv3/Resources/bdmysqlite/SQLiteDatabaseBrowserPortable/carro.db";
-            string conexaoString = $"Data Source={caminhoBanco};Version=3;";
-            Console.WriteLine("Usando banco em: " + caminhoBanco);
+            string conexaoString = "";
+            ConexaoBD conn = new ConexaoBD();
+            conexaoString=conn.ConectarBD();
 
             using (SQLiteConnection conexao = new SQLiteConnection(conexaoString))
             {
-                conexao.Open();
-                Console.WriteLine("Conexão estabelecida com sucesso!");
-                
+                try
+                {
+                    conexao.Open();    
+                    Console.WriteLine("Conexão estabelecida com sucesso!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 string sql = "SELECT rg, sexo, nome, dtnasc, interesse, cpr FROM atv3 WHERE cpr = @cpr";
 
                 using (SQLiteCommand comando = new SQLiteCommand(sql, conexao))
@@ -112,6 +143,11 @@ namespace WindoFormAtv3
                 }
             }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+      
         }
     }
 }
